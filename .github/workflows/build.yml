@@ -148,6 +148,6 @@ jobs:
         with:
           project: ${{ env.OCTOPUS_PROJECT_NAME }}
           release_number: ${{ steps.ReleaseNum.outputs.APP_VERSION }}
-          environments: ${{ steps.ReleaseNum.outputs.OCTOPUS_ENVIRONMENT }}
+          environment: ${{ steps.ReleaseNum.outputs.OCTOPUS_ENVIRONMENT }}
           tenants: ${{ env.OCTOPUS_TENANT_NAME }}
           
